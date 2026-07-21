@@ -33,11 +33,21 @@
 - [x] SSH 密钥配置
 - [x] GitHub 仓库创建
 - [x] 项目备忘录
-- [ ] 首页 index.html
-- [ ] 关于页面 about.html
-- [ ] 项目展示 projects.html
-- [ ] 全局样式 style.css
-- [ ] 交互脚本 script.js
-- [ ] Ghost 文章模板
-- [ ] GitHub Actions 部署
-- [ ] 域名绑定 & 上线
+- [x] 首页 index.html
+- [x] 关于页面 about.html
+- [x] 产品总览 products.html
+- [x] 氢气陶瓷球 hydrogen-ceramic-ball.html
+- [x] 抗菌陶瓷球 maca-kdf-ceramic-ball.html
+- [x] MPH+中和球 mph-condensate-neutralizer.html
+- [x] 应用概览 application.html
+- [x] 解决方案 solutions.html
+- [x] 博客列表 blog.html
+- [x] 联系页面 contact.html
+- [x] 全局样式 style.css
+- [x] 交互脚本 script.js
+- [x] Ghost 文章模板
+- [x] GitHub Actions 自动部署
+- [ ] 批量替换域名（emuqi.com → GitHub Pages）
+- [ ] 配置自定义域名（emuqi.com CNAME 指向 GitHub Pages）
+- [ ] 应用详情页（5个子页面）
+- [ ] Ghost 博客上线
