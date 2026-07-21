@@ -12,318 +12,199 @@
 <meta property="og:description" content="Solid-state hydrogen technology for deep antioxidant repair. 92.3% dermal penetration, clinically proven.">
 <meta property="og:url" content="https://emuqi.com/blog/muqi-hydrogen-eye-patch.html">
 <meta property="og:image" content="https://emuqi.com/assets/images/eye-patch-product.jpg">
-<meta property="og:site_name" content="MQ Health Tech">
 <meta name="twitter:card" content="summary_large_image">
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"Article","headline":"MuQi Solid-State Hydrogen Eye Patch — Anti-Aging Skincare Innovation","description":"Solid-state hydrogen technology for deep antioxidant repair. 92.3% dermal penetration.","author":{"@type":"Person","name":"Martin Chen"},"publisher":{"@type":"Organization","name":"MQ Health Tech","logo":{"@type":"ImageObject","url":"https://emuqi.com/assets/images/logo.jpg"}},"datePublished":"2025-05-20"}
+{"@context":"https://schema.org","@type":"Article","headline":"MuQi Solid-State Hydrogen Eye Patch","author":{"@type":"Person","name":"Martin Chen"},"publisher":{"@type":"Organization","name":"MQ Health Tech","logo":{"@type":"ImageObject","url":"https://emuqi.com/assets/images/logo.jpg"}},"datePublished":"2025-05-20"}
 </script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="../style.css">
-
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
 <style>
-/* ── RESET & BASE ── */
-body { font-family: "DM Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; background: #f5f6f8; margin: 0; padding: 0; color: #1a1a2e; }
+*, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: "DM Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; background: #f5f6f8; color: #1a1a2e; }
 
-/* ── NAV (slim, refined) ── */
-.site-nav { position: sticky; top: 0; z-index: 100; background: rgba(255,255,255,0.97); backdrop-filter: blur(16px); border-bottom: 1px solid rgba(0,0,0,0.06); }
-.nav-inner { max-width: 1224px; margin: 0 auto; display: flex; align-items: center; justify-content: space-between; height: 64px; padding: 0 32px; }
-.nav-links { display: flex; align-items: center; gap: 2px; }
-.nav-links a { font-size: 14px; font-weight: 500; color: #4a4a5a; text-decoration: none; padding: 8px 16px; border-radius: 8px; transition: all 0.2s; letter-spacing: -0.1px; }
-.nav-links a:hover { color: #1d4ed8; background: rgba(29,78,216,0.06); }
-.nav-links .dropdown a { padding-right: 12px; }
-.dropdown-menu { display: none; position: absolute; top: 100%; left: 0; background: #fff; border: 1px solid rgba(0,0,0,0.08); border-radius: 12px; box-shadow: 0 8px 32px rgba(0,0,0,0.1); min-width: 260px; padding: 8px; z-index: 200; }
-.dropdown:hover .dropdown-menu { display: block; }
-.dropdown-menu a { display: block; padding: 10px 14px; border-radius: 6px; font-size: 13px; }
-.dropdown-menu a:hover { background: #f0f4ff; }
-.nav-toggle { display: none; background: none; border: none; font-size: 24px; cursor: pointer; color: #1a1a2e; }
+/* ═══ NAV ═══ */
+.nav { display: flex; align-items: center; justify-content: space-between; max-width: 1200px; margin: 0 auto; padding: 0 40px; height: 72px; }
+.nav-l { display: flex; align-items: center; gap: 32px; }
+.nav-l a { font-size: 14px; font-weight: 500; color: #4a4a5a; text-decoration: none; transition: color 0.2s; }
+.nav-l a:hover { color: #1d4ed8; }
+.nav-l a.active { color: #1d4ed8; }
 
-/* ── HERO (lighter, more breathing) ── */
-.article-hero {
-  background: linear-gradient(160deg, #0a1628 0%, #142850 40%, #1d4ed8 100%);
-  padding: 140px 32px 100px;
-  text-align: center;
-  position: relative;
-  overflow: hidden;
+/* ═══ HERO ═══ */
+.hero { background: linear-gradient(135deg, #0a1628 0%, #1a3a6e 60%, #1d4ed8 100%); padding: 160px 40px 100px; text-align: center; }
+.hero h1 { font-size: 44px; font-weight: 600; color: #f0ece4; letter-spacing: -0.5px; line-height: 1.15; margin-bottom: 16px; }
+.hero .meta { color: rgba(240,236,228,0.5); font-size: 14px; margin-bottom: 24px; }
+.hero .meta span { color: #c89a3c; }
+.hero .sub { font-size: 17px; color: rgba(240,236,228,0.75); max-width: 560px; margin: 0 auto; line-height: 1.6; font-weight: 300; }
+
+/* ═══ ARTICLE ═══ */
+.wrap { max-width: 780px; margin: -48px auto 80px; padding: 0 24px; }
+.card { background: #fff; border-radius: 12px; padding: 56px; box-shadow: 0 2px 20px rgba(0,0,0,0.04); }
+.card h2 { font-size: 22px; color: #1a3a6e; font-weight: 600; margin: 48px 0 20px; }
+.card h3 { font-size: 17px; color: #1d4ed8; font-weight: 600; margin: 28px 0 12px; }
+.card p { font-size: 16px; line-height: 1.85; color: #2d3748; margin-bottom: 20px; }
+.card .cn { font-size: 14px; color: #94a3b8; line-height: 1.7; display: block; margin-top: 4px; }
+.card img { width: 100%; border-radius: 12px; margin: 32px 0; }
+.card .box { background: #f0f4ff; border-radius: 10px; padding: 24px 28px; margin-bottom: 32px; }
+.card .box p { margin: 0; font-size: 15px; color: #2d3a5e; }
+.card ul { list-style: none; padding: 0; }
+.card ul li { padding: 16px 0; border-bottom: 1px solid #f0f0f2; font-size: 15px; line-height: 1.7; color: #2d3748; }
+.card ul li:last-child { border: none; }
+.card .g { display: grid; grid-template-columns: repeat(4,1fr); gap: 12px; margin: 32px 0; }
+.card .g .c { background: #f8f9fc; border-radius: 10px; padding: 24px 12px; text-align: center; }
+.card .g .c .n { font-size: 28px; font-weight: 700; color: #c89a3c; }
+.card .g .c .l { font-size: 12px; color: #94a3b8; margin-top: 6px; }
+.card .cta { background: #0a1628; border-radius: 12px; padding: 40px; text-align: center; margin: 40px 0; }
+.card .cta h3 { color: #c89a3c; font-size: 18px; margin: 0 0 8px; }
+.card .cta p { color: rgba(240,236,228,0.6); font-size: 14px; margin-bottom: 20px; }
+.card .cta a { display: inline-block; padding: 12px 32px; background: #c89a3c; color: #fff; border-radius: 6px; text-decoration: none; font-weight: 600; font-size: 14px; }
+.card .cta a:hover { background: #d4a84b; }
+.faq-item { padding: 20px 0; border-bottom: 1px solid #f0f0f2; }
+.faq-item:last-child { border: none; }
+.faq-item h4 { font-size: 15px; color: #1a3a6e; font-weight: 600; margin-bottom: 6px; }
+.faq-item p { font-size: 14px; color: #6b7280; margin: 0; }
+
+/* ═══ FOOTER ═══ */
+.footer { background: #0a1628; margin-top: 80px; }
+.footer-in { max-width: 1200px; margin: 0 auto; padding: 60px 40px 0; display: grid; grid-template-columns: 2fr 1fr 1fr 1fr; gap: 48px; }
+.footer-in h4 { font-size: 12px; font-weight: 600; color: #c89a3c; letter-spacing: 1.5px; text-transform: uppercase; margin-bottom: 20px; }
+.footer-in a { display: block; font-size: 14px; color: #94a3b8; text-decoration: none; margin-bottom: 10px; transition: color 0.2s; }
+.footer-in a:hover { color: #f0ece4; }
+.footer-in p { font-size: 14px; color: #94a3b8; line-height: 1.7; }
+.footer-in .brand { font-size: 18px; font-weight: 700; color: #f0ece4; margin-bottom: 12px; display: flex; align-items: center; gap: 12px; }
+.footer-in .brand img { border-radius: 4px; }
+.footer-b { border-top: 1px solid rgba(255,255,255,0.06); text-align: center; padding: 24px; font-size: 13px; color: #475569; margin-top: 48px; }
+@media (max-width: 768px) {
+  .footer-in { grid-template-columns: 1fr 1fr; gap: 32px; }
+  .hero h1 { font-size: 30px; }
+  .card { padding: 28px 20px; }
+  .card .g { grid-template-columns: repeat(2,1fr); }
+  .nav-l { gap: 16px; }
+  .nav-l a { font-size: 13px; }
 }
-.article-hero::before {
-  content: '';
-  position: absolute; top: -60%; left: -30%; width: 160%; height: 200%;
-  background: radial-gradient(ellipse at 30% 40%, rgba(200,154,60,0.08) 0%, transparent 60%),
-              radial-gradient(ellipse at 70% 60%, rgba(29,78,216,0.12) 0%, transparent 60%);
-}
-.article-hero .inner { position: relative; z-index: 1; max-width: 720px; margin: 0 auto; }
-.article-hero .kicker { font-size: 12px; font-weight: 600; color: #c89a3c; text-transform: uppercase; letter-spacing: 3px; margin-bottom: 20px; }
-.article-hero h1 { font-size: clamp(30px, 4vw, 42px); color: #f0ece4; font-weight: 600; line-height: 1.2; margin-bottom: 16px; letter-spacing: -0.5px; }
-.article-hero .meta { font-size: 13px; color: rgba(240,236,228,0.5); letter-spacing: 0.3px; }
-.article-hero .meta span { color: #c89a3c; }
-.article-hero .excerpt { font-size: 17px; color: rgba(240,236,228,0.8); line-height: 1.7; max-width: 600px; margin: 24px auto 0; font-weight: 300; }
-
-/* ── ARTICLE BODY (spacious card) ── */
-.article-wrap { max-width: 840px; margin: -60px auto 80px; padding: 0 24px; position: relative; z-index: 2; }
-.article-card { background: #fff; border-radius: 20px; box-shadow: 0 4px 40px rgba(0,0,0,0.06); padding: 64px 72px; }
-@media (max-width: 768px) { .article-card { padding: 32px 24px; } .article-wrap { padding: 0 16px; } }
-
-.article-card .tldr { background: linear-gradient(135deg, #f0f4ff 0%, #e8f0fe 100%); border-radius: 16px; padding: 32px 36px; margin-bottom: 48px; }
-.article-card .tldr p { font-size: 16px; line-height: 1.7; color: #2d3a5e; margin: 0; }
-.article-card .tldr strong { color: #1d4ed8; }
-
-.article-card p { font-size: 16px; line-height: 1.9; color: #2d3748; margin-bottom: 24px; }
-.article-card .cn { font-size: 14px; color: #8a8a9a; line-height: 1.8; display: block; margin-top: 8px; padding-left: 20px; border-left: 2px solid #e5e7eb; }
-
-.article-card h2 { font-size: 24px; color: #1a3a6e; font-weight: 600; margin: 64px 0 24px; letter-spacing: -0.3px; }
-.article-card h2::before { content: ''; display: block; width: 44px; height: 3px; background: #c89a3c; margin-bottom: 16px; border-radius: 2px; }
-.article-card h3 { font-size: 18px; color: #1d4ed8; font-weight: 600; margin: 32px 0 16px; }
-
-.article-card img { width: 100%; height: auto; border-radius: 16px; margin: 40px 0; box-shadow: 0 4px 24px rgba(0,0,0,0.08); }
-
-.article-card .metric-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; margin: 40px 0; }
-.article-card .metric-card { background: #f8f9fc; border-radius: 14px; padding: 28px 16px; text-align: center; transition: all 0.2s; }
-.article-card .metric-card:hover { background: #f0f4ff; transform: translateY(-2px); }
-.article-card .metric-card .num { font-size: 32px; font-weight: 700; color: #c89a3c; letter-spacing: -0.5px; }
-.article-card .metric-card .label { font-size: 12px; color: #8a8a9a; margin-top: 8px; line-height: 1.4; font-weight: 500; }
-@media (max-width: 640px) { .article-card .metric-grid { grid-template-columns: repeat(2, 1fr); } }
-
-.article-card ul { list-style: none; padding: 0; margin: 0 0 32px; }
-.article-card ul li { padding: 20px 0; border-bottom: 1px solid #f0f0f2; font-size: 16px; line-height: 1.7; color: #2d3748; }
-.article-card ul li:last-child { border: none; }
-.article-card ul li strong { color: #1d4ed8; display: inline-block; margin-bottom: 4px; }
-.article-card ul li .cn { border: none; padding-left: 0; margin-top: 4px; font-size: 13px; }
-
-.article-card .faq { margin: 48px 0; }
-.article-card .faq-item { padding: 24px 0; border-bottom: 1px solid #f0f0f2; }
-.article-card .faq-item:last-child { border: none; }
-.article-card .faq-item h4 { font-size: 16px; color: #1a3a6e; font-weight: 600; margin-bottom: 10px; }
-.article-card .faq-item p { font-size: 15px; color: #6b7280; margin: 0; line-height: 1.7; }
-
-.article-card .cta { background: linear-gradient(160deg, #0a1628 0%, #1a3a6e 100%); border-radius: 20px; padding: 48px 40px; margin: 48px 0; text-align: center; }
-.article-card .cta h3 { color: #c89a3c; font-size: 20px; font-weight: 600; margin: 0 0 8px; }
-.article-card .cta p { color: rgba(240,236,228,0.7); font-size: 15px; margin-bottom: 24px; line-height: 1.6; }
-.article-card .cta .btn-gold { display: inline-block; padding: 14px 40px; background: #c89a3c; color: #fff; border-radius: 10px; text-decoration: none; font-weight: 600; font-size: 15px; transition: all 0.3s; letter-spacing: 0.2px; }
-.article-card .cta .btn-gold:hover { background: #d4a84b; transform: translateY(-2px); box-shadow: 0 8px 24px rgba(200,154,60,0.3); }
-
-.article-footer { display: flex; justify-content: space-between; align-items: center; margin-top: 48px; padding-top: 32px; border-top: 1px solid #f0f0f2; }
-.article-footer a { color: #1d4ed8; text-decoration: none; font-size: 14px; font-weight: 500; }
-.article-footer a:hover { text-decoration: underline; }
-.article-footer .share { display: flex; gap: 12px; }
-.article-footer .share a { color: #8a8a9a; font-size: 13px; padding: 6px 14px; border: 1px solid #e5e7eb; border-radius: 8px; transition: all 0.2s; text-decoration: none; }
-.article-footer .share a:hover { border-color: #1d4ed8; color: #1d4ed8; }
 </style>
 </head>
 <body>
 
-<!-- ═══════════════ PREMIUM NAV ═══════════════ -->
-<header style="position:fixed;top:0;left:0;right:0;z-index:1000;background:#0a1628;border-bottom:1px solid rgba(200,154,60,0.15);font-family:'DM Sans',sans-serif">
-  <div style="max-width:1224px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;height:72px;padding:0 32px">
-    <a href="/" style="display:flex;align-items:center;gap:12px;text-decoration:none">
-      <img src="../assets/images/logo.jpg" alt="MQ Health Tech" height="42" style="border-radius:4px">
-      <span style="font-size:18px;font-weight:700;color:#f0ece4;letter-spacing:-0.3px">MUQI <span style="color:#c89a3c">·</span> TECH</span>
+<!-- NAV -->
+<header style="background:#fff;border-bottom:1px solid #e5e7eb;position:sticky;top:0;z-index:100">
+  <div class="nav">
+    <a href="/" style="display:flex;align-items:center;gap:10px;text-decoration:none">
+      <img src="../assets/images/logo.jpg" alt="" height="38" style="border-radius:3px">
+      <span style="font-size:17px;font-weight:700;color:#1a1a2e">MUQI <span style="color:#c89a3c">·</span> TECH</span>
     </a>
-    <nav style="display:flex;align-items:center;gap:4px">
-      <a href="/" style="font-size:13px;font-weight:500;color:rgba(240,236,228,0.7);text-decoration:none;padding:8px 16px;border-radius:6px;transition:all 0.2s;letter-spacing:0.2px;text-transform:uppercase">Home</a>
-      <div style="position:relative" onmouseenter="this.querySelector('.dd').style.display='block'" onmouseleave="this.querySelector('.dd').style.display='none'">
-        <a href="../about-functional-ceramic-ball-water-media-manufacturer.html" style="font-size:13px;font-weight:500;color:rgba(240,236,228,0.7);text-decoration:none;padding:8px 16px;border-radius:6px;transition:all 0.2s;letter-spacing:0.2px;text-transform:uppercase">About</a>
-        <div class="dd" style="display:none;position:absolute;top:100%;left:0;background:#0f1b33;border:1px solid rgba(200,154,60,0.2);border-radius:10px;min-width:180px;padding:6px;box-shadow:0 12px 40px rgba(0,0,0,0.4)">
-          <a href="../about-functional-ceramic-ball-water-media-manufacturer.html" style="display:block;padding:10px 14px;color:rgba(240,236,228,0.7);text-decoration:none;font-size:13px;border-radius:6px">About Us</a>
-        </div>
-      </div>
-      <div style="position:relative" onmouseenter="this.querySelector('.dd').style.display='block'" onmouseleave="this.querySelector('.dd').style.display='none'">
-        <a href="../product-functional-ceramic-materials.html" style="font-size:13px;font-weight:500;color:rgba(240,236,228,0.7);text-decoration:none;padding:8px 16px;border-radius:6px;transition:all 0.2s;letter-spacing:0.2px;text-transform:uppercase">Products</a>
-        <div class="dd" style="display:none;position:absolute;top:100%;left:0;background:#0f1b33;border:1px solid rgba(200,154,60,0.2);border-radius:10px;min-width:240px;padding:6px;box-shadow:0 12px 40px rgba(0,0,0,0.4)">
-          <a href="../hydrogen-generate-ceramic-ball.html" style="display:block;padding:10px 14px;color:rgba(240,236,228,0.7);text-decoration:none;font-size:13px;border-radius:6px">Hydrogen Generate Ceramic Ball</a>
-          <a href="../maca-kdf-antibacterial-ceramic-ball.html" style="display:block;padding:10px 14px;color:rgba(240,236,228,0.7);text-decoration:none;font-size:13px;border-radius:6px">MACA KDF Antibacterial Ceramic Ball</a>
-          <a href="../mph-condensate-neutralizer.html" style="display:block;padding:10px 14px;color:rgba(240,236,228,0.7);text-decoration:none;font-size:13px;border-radius:6px">MPH+ Condensate Neutralizer</a>
-        </div>
-      </div>
-      <a href="../hydrogen-health-application.html" style="font-size:13px;font-weight:500;color:rgba(240,236,228,0.7);text-decoration:none;padding:8px 16px;border-radius:6px;transition:all 0.2s;letter-spacing:0.2px;text-transform:uppercase">Applications</a>
-      <a href="../solutions-hydrogen-agriculture.html" style="font-size:13px;font-weight:500;color:rgba(240,236,228,0.7);text-decoration:none;padding:8px 16px;border-radius:6px;transition:all 0.2s;letter-spacing:0.2px;text-transform:uppercase">Solutions</a>
-      <a href="../blog-list-hydrogen-health.html" style="font-size:13px;font-weight:500;color:#c89a3c;text-decoration:none;padding:8px 16px;border-radius:6px;transition:all 0.2s;letter-spacing:0.2px;text-transform:uppercase">Blog</a>
-      <a href="../contact-mqtech-hydrogen-health.html" style="font-size:13px;font-weight:500;color:rgba(240,236,228,0.7);text-decoration:none;padding:8px 16px;border-radius:6px;transition:all 0.2s;letter-spacing:0.2px;text-transform:uppercase">Contact</a>
-    </nav>
+    <div class="nav-l">
+      <a href="/">Home</a>
+      <a href="../about-functional-ceramic-ball-water-media-manufacturer.html">About</a>
+      <a href="../product-functional-ceramic-materials.html">Products</a>
+      <a href="../hydrogen-health-application.html">Applications</a>
+      <a href="../solutions-hydrogen-agriculture.html">Solutions</a>
+      <a href="../blog-list-hydrogen-health.html" class="active">Blog</a>
+      <a href="../contact-mqtech-hydrogen-health.html" style="background:#1d4ed8;color:#fff!important;padding:8px 20px;border-radius:6px">Contact</a>
+    </div>
   </div>
 </header>
 
-<div class="article-hero">
-  <div class="inner">
-    <div class="kicker">Skincare Innovation</div>
-    <h1>MuQi Solid-State<br>Hydrogen Eye Patch</h1>
-    <p class="meta">May 20, 2025 · Martin Chen</p>
-    <p class="excerpt">Solid-state hydrogen technology delivering deep antioxidant repair to delicate eye skin — 92.3% dermal penetration, clinically proven in 4 weeks.</p>
-  </div>
+<!-- HERO -->
+<div class="hero">
+  <h1>MuQi Solid-State Hydrogen Eye Patch</h1>
+  <p class="meta">May 20, 2025 · Martin Chen · <span>Skincare Innovation</span></p>
+  <p class="sub">Solid-state hydrogen technology delivering deep antioxidant repair to delicate eye skin — 92.3% dermal penetration, clinically proven in 4 weeks.</p>
 </div>
 
-<div class="article-wrap">
-  <article class="article-card">
+<!-- ARTICLE -->
+<div class="wrap">
+  <article class="card">
 
-    <div class="tldr">
-      <p><strong>MuQi's solid-state hydrogen eye patch</strong> combines HI Hydrogen Embedding Technology with a medical-grade carrier matrix. Clinical data shows <strong>18.7% elasticity improvement</strong> and <strong>23.4% wrinkle reduction</strong> in 4 weeks — a shift from surface hydration to deep antioxidant repair.</p>
+    <div class="box">
+      <p><strong>MuQi's solid-state hydrogen eye patch</strong> combines HI Hydrogen Embedding Technology with a medical-grade carrier matrix. Clinical data shows <strong>18.7% elasticity improvement</strong> and <strong>23.4% wrinkle reduction</strong> in 4 weeks.</p>
     </div>
 
-    <img src="../assets/images/eye-patch-product.jpg" alt="MuQi solid-state hydrogen eye patch product — HI hydrogen embedding technology" loading="lazy">
+    <img src="../assets/images/eye-patch-product.jpg" alt="Hydrogen eye patch product">
 
-    <p>Modern eyes endure multiple pressures — screens, late nights, dryness. Traditional eye patches offer temporary relief but fail to address deep oxidative damage. MuQi Technology introduces the <strong>Hydrogen Eye Patch</strong> with solid-state hydrogen technology, allowing every inch of eye skin to be gently healed by the microscopic power of hydrogen molecules.</p>
-    <span class="cn">现代眼睛承受着屏幕、熬夜、干燥的多重压力。传统眼贴只能缓解表面，无法解决深层氧化损伤。木齐科技推出固态氢眼贴，让每一寸眼周肌肤都能被氢分子的微观力量温和治愈。</span>
+    <p>Modern eyes endure multiple pressures — screens, late nights, dryness. Traditional eye patches offer temporary relief but fail to address deep oxidative damage. MuQi introduces the <strong>Hydrogen Eye Patch</strong> with solid-state hydrogen technology.</p>
+    <span class="cn">现代眼睛承受着屏幕、熬夜、干燥的多重压力。传统眼贴只能缓解表面，无法解决深层氧化损伤。木齐科技推出固态氢眼贴。</span>
 
     <h2>Technology</h2>
 
     <h3>HI Hydrogen Embedding</h3>
-    <p>Solid-state hydrogen (HI) is embedded into fibers via ion plating, releasing high-purity hydrogen upon contact with water. Hydrogen concentration reaches <strong>0.1–0.5 L/h</strong> (3× safer than national standards), with <strong>92.3% penetration efficiency</strong> to the dermis (Fudan Lab data).</p>
+    <p>Solid-state hydrogen (HI) is embedded into fibers via ion plating, releasing high-purity hydrogen upon contact with water. Concentration reaches <strong>0.1–0.5 L/h</strong> (3× safer than standards), with <strong>92.3% penetration efficiency</strong> to the dermis (Fudan Lab data).</p>
     <span class="cn">通过离子镀工艺将固态氢素嵌入眼贴纤维，遇水后持续释放高纯度氢气，穿透效率直达真皮层 92.3%。</span>
 
-    <div class="metric-grid">
-      <div class="metric-card">
-        <div class="num">0.1–0.5</div>
-        <div class="label">H₂ Release<br>L/h</div>
-      </div>
-      <div class="metric-card">
-        <div class="num">92.3%</div>
-        <div class="label">Dermal<br>Penetration</div>
-      </div>
-      <div class="metric-card">
-        <div class="num">18.7%</div>
-        <div class="label">Elasticity<br>↑ 4wk</div>
-      </div>
-      <div class="metric-card">
-        <div class="num">23.4%</div>
-        <div class="label">Fine Lines<br>↓ 4wk</div>
-      </div>
+    <div class="g">
+      <div class="c"><div class="n">0.1–0.5</div><div class="l">H₂ Release L/h</div></div>
+      <div class="c"><div class="n">92.3%</div><div class="l">Dermal Penetration</div></div>
+      <div class="c"><div class="n">18.7%</div><div class="l">Elasticity ↑ 4wk</div></div>
+      <div class="c"><div class="n">23.4%</div><div class="l">Fine Lines ↓ 4wk</div></div>
     </div>
 
     <h3>Medical-Grade Carrier Matrix</h3>
-    <p>Electrospun membrane (>95% porosity) combined with hyaluronic acid and ceramides enables dual-action care: hydrogen antioxidant + active ingredient repair. Clinical tests show significant results in 4 weeks.</p>
-    <span class="cn">静电纺丝膜布（孔隙率＞95%）搭配透明质酸和神经酰胺，实现氢分子抗氧化与活性成分修复的双通道协同。</span>
+    <p>Electrospun membrane (>95% porosity) with hyaluronic acid and ceramides enables dual-action: hydrogen antioxidant + active repair.</p>
+    <span class="cn">静电纺丝膜布搭配透明质酸和神经酰胺，实现氢分子抗氧化与活性成分修复的双通道协同。</span>
 
     <h2>Benefits</h2>
     <ul>
-      <li>
-        <strong>Antioxidant & Anti-Aging</strong><br>
-        Free radical scavenging with 9.52 antioxidant index. Delays periorbital aging at the cellular level.
-        <span class="cn">清除自由基，延缓眼周老化，抗氧指数 9.52</span>
-      </li>
-      <li>
-        <strong>Post-Phototherapy Recovery</strong><br>
-        89% erythema resolution in 24 hours. 9.4/10 patient satisfaction.
-        <span class="cn">24小时红斑消退率 89%，满意度 9.4/10</span>
-      </li>
-      <li>
-        <strong>Daily Rescue</strong><br>
-        Relieves dryness, dark circles, and puffiness. Ideal for screen users and late-night workers.
-        <span class="cn">缓解干涩、黑眼圈、浮肿，适配熬夜党、屏幕族</span>
-      </li>
+      <li><strong>Antioxidant & Anti-Aging</strong> — Free radical scavenging, 9.52 antioxidant index. <span class="cn" style="border:none;padding:0;margin-top:2px">清除自由基，抗氧指数 9.52</span></li>
+      <li><strong>Post-Phototherapy Recovery</strong> — 89% erythema resolution in 24h. <span class="cn" style="border:none;padding:0;margin-top:2px">24小时红斑消退率 89%</span></li>
+      <li><strong>Daily Rescue</strong> — Relieves dryness, dark circles, puffiness. <span class="cn" style="border:none;padding:0;margin-top:2px">缓解干涩、黑眼圈、浮肿</span></li>
     </ul>
 
     <h2>FAQ</h2>
-    <div class="faq">
-      <div class="faq-item">
-        <h4>How does it work?</h4>
-        <p>Patented HI Hydrogen Embedding Technology — solid-state hydrogen is embedded via ion plating and releases H₂ when in contact with skin moisture, providing hours of continuous antioxidant protection.</p>
-      </div>
-      <div class="faq-item">
-        <h4>Is it safe for sensitive skin?</h4>
-        <p>Yes. Hydrogen concentration is 3× below safety thresholds. The medical-grade carrier matrix is hypoallergenic and dermatologist-tested.</p>
-      </div>
-      <div class="faq-item">
-        <h4>How long until I see results?</h4>
-        <p>Clinical data shows 18.7% elasticity improvement and 23.4% wrinkle reduction after 4 weeks. Many users report reduced puffiness and brighter under-eye area within the first week.</p>
-      </div>
-    </div>
+    <div class="faq-item"><h4>How does it work?</h4><p>Patented HI Hydrogen Embedding Technology releases H₂ when in contact with skin moisture for hours of antioxidant protection.</p></div>
+    <div class="faq-item"><h4>Is it safe for sensitive skin?</h4><p>Yes. 3× below safety thresholds. Hypoallergenic and dermatologist-tested.</p></div>
+    <div class="faq-item"><h4>How long until results?</h4><p>18.7% elasticity improvement and 23.4% wrinkle reduction after 4 weeks. Most users see improvement in the first week.</p></div>
 
     <div class="cta">
       <h3>Interested in Hydrogen Skincare?</h3>
-      <p>OEM/ODM partnerships · Bulk orders · Technical inquiries<br>Complete hydrogen beauty product solutions available.</p>
-      <a href="../contact-mqtech-hydrogen-health.html" class="btn-gold">Contact Us →</a>
+      <p>OEM/ODM · Bulk orders · Technical inquiries</p>
+      <a href="../contact-mqtech-hydrogen-health.html">Contact Us →</a>
     </div>
 
-    <div class="article-footer">
-      <a href="../blog-list-hydrogen-health.html">← Back to Blog</a>
-      <div class="share">
-        <a href="#" onclick="window.open('https://twitter.com/intent/tweet?text='+encodeURIComponent(document.title),'_blank')">X</a>
-        <a href="#" onclick="window.open('https://www.linkedin.com/sharing/share-offsite/?url='+encodeURIComponent(location.href),'_blank')">in</a>
+    <div style="display:flex;justify-content:space-between;margin-top:32px;padding-top:24px;border-top:1px solid #f0f0f2">
+      <a href="../blog-list-hydrogen-health.html" style="color:#1d4ed8;text-decoration:none;font-size:14px">← Back to Blog</a>
+      <div style="display:flex;gap:8px">
+        <a href="#" onclick="window.open('https://twitter.com/intent/tweet?text='+encodeURIComponent(document.title),'_blank')" style="color:#94a3b8;text-decoration:none;font-size:13px;padding:4px 12px;border:1px solid #e5e7eb;border-radius:6px">X</a>
+        <a href="#" onclick="window.open('https://www.linkedin.com/sharing/share-offsite/?url='+encodeURIComponent(location.href),'_blank')" style="color:#94a3b8;text-decoration:none;font-size:13px;padding:4px 12px;border:1px solid #e5e7eb;border-radius:6px">LinkedIn</a>
       </div>
     </div>
 
   </article>
 </div>
 
-<!-- ═══════════════ PREMIUM FOOTER ═══════════════ -->
-<footer style="background:linear-gradient(180deg,#0a1628 0%,#060e1c 100%);font-family:'DM Sans',sans-serif;position:relative">
-  <!-- Gold accent top border -->
-  <div style="height:3px;background:linear-gradient(90deg,transparent 0%,#c89a3c 20%,#c89a3c 80%,transparent 100%)"></div>
-  
-  <div style="max-width:1100px;margin:0 auto;padding:64px 32px 40px">
-    <div style="display:grid;grid-template-columns:2.5fr 1.5fr 1.5fr 2fr;gap:48px">
-      
-      <!-- Brand column -->
-      <div>
-        <div style="display:flex;align-items:center;gap:12px;margin-bottom:20px">
-          <img src="../assets/images/logo.jpg" alt="MQ Tech" height="44" style="border-radius:4px">
-          <div>
-            <div style="font-size:17px;font-weight:700;color:#f0ece4;letter-spacing:-0.3px">MUQI TECH</div>
-            <div style="font-size:11px;color:#c89a3c;letter-spacing:2px;text-transform:uppercase;margin-top:2px">Hydrogen · Health · Innovation</div>
-          </div>
-        </div>
-        <p style="font-size:13px;line-height:1.8;color:#64748b;margin:0">Leading manufacturer of functional mineral ceramic water media and solid-state hydrogen products for health and eco applications worldwide.</p>
-        <!-- Social icons -->
-        <div style="display:flex;gap:10px;margin-top:24px">
-          <a href="https://x.com/MARTINPARK111" target="_blank" style="display:flex;align-items:center;justify-content:center;width:36px;height:36px;border-radius:8px;background:rgba(255,255,255,0.05);color:#64748b;text-decoration:none;font-size:14px;transition:all 0.2s;border:1px solid rgba(255,255,255,0.06)" onmouseover="this.style.background='#1d4ed8';this.style.color='#fff'" onmouseout="this.style.background='rgba(255,255,255,0.05)';this.style.color='#64748b'">𝕏</a>
-          <a href="https://www.linkedin.com/company/72043164" target="_blank" style="display:flex;align-items:center;justify-content:center;width:36px;height:36px;border-radius:8px;background:rgba(255,255,255,0.05);color:#64748b;text-decoration:none;font-size:14px;transition:all 0.2s;border:1px solid rgba(255,255,255,0.06)" onmouseover="this.style.background='#1d4ed8';this.style.color='#fff'" onmouseout="this.style.background='rgba(255,255,255,0.05)';this.style.color='#64748b'">in</a>
-          <a href="https://www.youtube.com/@Martinchen1234" target="_blank" style="display:flex;align-items:center;justify-content:center;width:36px;height:36px;border-radius:8px;background:rgba(255,255,255,0.05);color:#64748b;text-decoration:none;font-size:14px;transition:all 0.2s;border:1px solid rgba(255,255,255,0.06)" onmouseover="this.style.background='#1d4ed8';this.style.color='#fff'" onmouseout="this.style.background='rgba(255,255,255,0.05)';this.style.color='#64748b'">▶</a>
-          <a href="https://www.instagram.com/muqizb/" target="_blank" style="display:flex;align-items:center;justify-content:center;width:36px;height:36px;border-radius:8px;background:rgba(255,255,255,0.05);color:#64748b;text-decoration:none;font-size:14px;transition:all 0.2s;border:1px solid rgba(255,255,255,0.06)" onmouseover="this.style.background='#1d4ed8';this.style.color='#fff'" onmouseout="this.style.background='rgba(255,255,255,0.05)';this.style.color='#64748b'">📷</a>
-        </div>
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="footer-in">
+    <div>
+      <div class="brand"><img src="../assets/images/logo.jpg" alt="" height="38"> MUQI TECH</div>
+      <p>Leading manufacturer of functional mineral ceramic water media and solid-state hydrogen products for health and eco applications worldwide.</p>
+      <div style="display:flex;gap:12px;margin-top:20px">
+        <a href="https://x.com/MARTINPARK111" target="_blank" style="display:inline-flex;align-items:center;justify-content:center;width:36px;height:36px;border-radius:8px;border:1px solid rgba(255,255,255,0.08);font-size:14px">𝕏</a>
+        <a href="https://www.linkedin.com/company/72043164" target="_blank" style="display:inline-flex;align-items:center;justify-content:center;width:36px;height:36px;border-radius:8px;border:1px solid rgba(255,255,255,0.08);font-size:14px">in</a>
+        <a href="https://www.youtube.com/@Martinchen1234" target="_blank" style="display:inline-flex;align-items:center;justify-content:center;width:36px;height:36px;border-radius:8px;border:1px solid rgba(255,255,255,0.08);font-size:14px">▶</a>
+        <a href="mailto:muqizb@gmail.com" style="display:inline-flex;align-items:center;justify-content:center;width:36px;height:36px;border-radius:8px;border:1px solid rgba(255,255,255,0.08);font-size:14px">✉</a>
       </div>
-      
-      <!-- Quick links -->
-      <div>
-        <h4 style="font-size:11px;font-weight:600;color:#c89a3c;margin:0 0 20px;letter-spacing:2px;text-transform:uppercase">Explore</h4>
-        <ul style="list-style:none;padding:0;margin:0">
-          <li style="margin-bottom:10px"><a href="/" style="color:#94a3b8;text-decoration:none;font-size:13px;transition:color 0.2s">Home</a></li>
-          <li style="margin-bottom:10px"><a href="../about-functional-ceramic-ball-water-media-manufacturer.html" style="color:#94a3b8;text-decoration:none;font-size:13px;transition:color 0.2s">About Us</a></li>
-          <li style="margin-bottom:10px"><a href="../product-functional-ceramic-materials.html" style="color:#94a3b8;text-decoration:none;font-size:13px;transition:color 0.2s">Products</a></li>
-          <li style="margin-bottom:10px"><a href="../hydrogen-health-application.html" style="color:#94a3b8;text-decoration:none;font-size:13px;transition:color 0.2s">Applications</a></li>
-          <li style="margin-bottom:10px"><a href="../blog-list-hydrogen-health.html" style="color:#94a3b8;text-decoration:none;font-size:13px;transition:color 0.2s">Blog</a></li>
-        </ul>
-      </div>
-      
-      <!-- Products -->
-      <div>
-        <h4 style="font-size:11px;font-weight:600;color:#c89a3c;margin:0 0 20px;letter-spacing:2px;text-transform:uppercase">Products</h4>
-        <ul style="list-style:none;padding:0;margin:0">
-          <li style="margin-bottom:10px"><a href="../hydrogen-generate-ceramic-ball.html" style="color:#94a3b8;text-decoration:none;font-size:13px;transition:color 0.2s">Hydrogen Ceramic Ball</a></li>
-          <li style="margin-bottom:10px"><a href="../maca-kdf-antibacterial-ceramic-ball.html" style="color:#94a3b8;text-decoration:none;font-size:13px;transition:color 0.2s">MACA Antibacterial Ball</a></li>
-          <li style="margin-bottom:10px"><a href="../mph-condensate-neutralizer.html" style="color:#94a3b8;text-decoration:none;font-size:13px;transition:color 0.2s">MPH+ Condensate</a></li>
-          <li style="margin-bottom:10px"><a href="../hydrogen-water-bottle-or-hydrogen-health.html" style="color:#94a3b8;text-decoration:none;font-size:13px;transition:color 0.2s">Hydrogen Water Bottle</a></li>
-          <li style="margin-bottom:10px"><a href="../hydrogen-health-hydrogen-alkaline-water-sachet.html" style="color:#94a3b8;text-decoration:none;font-size:13px;transition:color 0.2s">Alkaline Sachet</a></li>
-        </ul>
-      </div>
-      
-      <!-- Contact -->
-      <div>
-        <h4 style="font-size:11px;font-weight:600;color:#c89a3c;margin:0 0 20px;letter-spacing:2px;text-transform:uppercase">Contact</h4>
-        <div style="margin-bottom:16px">
-          <div style="font-size:11px;color:#c89a3c;letter-spacing:1px;margin-bottom:4px;text-transform:uppercase">Phone / WeChat / WhatsApp</div>
-          <div style="font-size:14px;color:#f0ece4;font-weight:500">+86 1396 441 6725</div>
-        </div>
-        <div style="margin-bottom:16px">
-          <div style="font-size:11px;color:#c89a3c;letter-spacing:1px;margin-bottom:4px;text-transform:uppercase">Email</div>
-          <a href="mailto:muqizb@gmail.com" style="font-size:14px;color:#60a5fa;text-decoration:none">muqizb@gmail.com</a>
-        </div>
-        <div>
-          <div style="font-size:11px;color:#c89a3c;letter-spacing:1px;margin-bottom:4px;text-transform:uppercase">Address</div>
-          <div style="font-size:12px;color:#94a3b8;line-height:1.6">Block B, Ceramic Innovation Park<br>125 Liuquan Road, Zibo<br>Shandong, China</div>
-        </div>
-      </div>
-      
+    </div>
+    <div>
+      <h4>Explore</h4>
+      <a href="/">Home</a>
+      <a href="../about-functional-ceramic-ball-water-media-manufacturer.html">About</a>
+      <a href="../product-functional-ceramic-materials.html">Products</a>
+      <a href="../blog-list-hydrogen-health.html">Blog</a>
+    </div>
+    <div>
+      <h4>Products</h4>
+      <a href="../hydrogen-generate-ceramic-ball.html">Ceramic Ball</a>
+      <a href="../maca-kdf-antibacterial-ceramic-ball.html">MACA Antibacterial</a>
+      <a href="../mph-condensate-neutralizer.html">MPH+ Condensate</a>
+      <a href="../hydrogen-water-bottle-or-hydrogen-health.html">Water Bottle</a>
+    </div>
+    <div>
+      <h4>Contact</h4>
+      <p>+86 1396 441 6725</p>
+      <a href="mailto:muqizb@gmail.com">muqizb@gmail.com</a>
+      <p style="font-size:13px;margin-top:12px">Block B, Innovation Park<br>125 Liuquan Road<br>Zibo, Shandong, China</p>
     </div>
   </div>
-  
-  <!-- Copyright bar -->
-  <div style="border-top:1px solid rgba(255,255,255,0.05);padding:20px 32px">
-    <div style="max-width:1100px;margin:0 auto;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:12px">
-      <span style="font-size:12px;color:#475569">© 2025 Muqi Tech · All rights reserved</span>
-      <a href="https://emuqi.com" style="font-size:12px;color:#c89a3c;text-decoration:none">www.emuqi.com</a>
-    </div>
-  </div>
+  <div class="footer-b">© 2025 Muqi Tech · <a href="https://emuqi.com" style="color:#c89a3c;text-decoration:none">emuqi.com</a></div>
 </footer>
-<script src="../script.js"></script>
 </body>
 </html>
