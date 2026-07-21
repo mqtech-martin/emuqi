@@ -3,9 +3,128 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>{{TITLE}} | MQ Health Tech Blog</title>
-<meta name="description" content="{{EXCERPT}}">
+
+<!-- ===== PRIMARY SEO ===== -->
+<title>{{TITLE}} | MQ Health Tech — Hydrogen Innovation</title>
+<meta name="description" content="{{META_DESC}}">
+<meta name="keywords" content="{{KEYWORDS}}">
+<link rel="canonical" href="https://emuqi.com/blog/{{SLUG}}.html">
+
+<!-- ===== OPEN GRAPH (Facebook, LinkedIn, etc.) ===== -->
+<meta property="og:type" content="article">
+<meta property="og:title" content="{{TITLE}} | MQ Health Tech">
+<meta property="og:description" content="{{META_DESC}}">
+<meta property="og:url" content="https://emuqi.com/blog/{{SLUG}}.html">
+<meta property="og:image" content="https://emuqi.com/assets/images/og-default.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:site_name" content="MQ Health Tech">
+<meta property="og:locale" content="en_US">
+
+<!-- ===== TWITTER CARD ===== -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="{{TITLE}} | MQ Health Tech">
+<meta name="twitter:description" content="{{META_DESC}}">
+<meta name="twitter:image" content="https://emuqi.com/assets/images/og-default.jpg">
+
+<!-- ===== SCHEMA.ORG JSON-LD (GEO — feeds AI assistants) ===== -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "{{TITLE}}",
+  "description": "{{META_DESC}}",
+  "image": "https://emuqi.com/assets/images/og-default.jpg",
+  "author": {
+    "@type": "Person",
+    "name": "Martin Chen",
+    "jobTitle": "CEO, MQ Health Tech",
+    "url": "https://emuqi.com/about-functional-ceramic-ball-water-media-manufacturer.html"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "MQ Health Tech (Muqi Technology)",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://emuqi.com/assets/images/logo.jpg"
+    }
+  },
+  "datePublished": "{{DATE_ISO}}",
+  "dateModified": "{{DATE_ISO}}",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://emuqi.com/blog/{{SLUG}}.html"
+  },
+  {{FAQ_JSON}}
+  "about": {
+    "@type": "Thing",
+    "name": "{{PRIMARY_KEYWORD}}",
+    "description": "{{KEYWORD_DESC}}"
+  }
+}
+</script>
+
+<!-- ===== BREADCRUMB JSON-LD ===== -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://emuqi.com/" },
+    { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://emuqi.com/blog-list-hydrogen-health.html" },
+    { "@type": "ListItem", "position": 3, "name": "{{TITLE}}", "item": "https://emuqi.com/blog/{{SLUG}}.html" }
+  ]
+}
+</script>
+
+<!-- ===== ORGANIZATION SCHEMA ===== -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "MQ Health Tech (Muqi Technology)",
+  "url": "https://emuqi.com",
+  "logo": "https://emuqi.com/assets/images/logo.jpg",
+  "description": "Leading manufacturer of functional mineral ceramic water media and solid-state hydrogen products for health and eco applications.",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Block B, advanced ceramic industry innovation park, 125 Liuquan Road",
+    "addressLocality": "Zibo",
+    "addressRegion": "Shandong",
+    "addressCountry": "CN"
+  },
+  "contactPoint": {
+    "@type": "ContactPoint",
+    "telephone": "+86-13964416725",
+    "contactType": "sales",
+    "email": "muqizb@gmail.com"
+  }
+}
+</script>
+
 <link rel="stylesheet" href="../style.css">
+<style>
+  .article-body { max-width: 780px; margin: 100px auto 60px; padding: 0 24px; }
+  .article-body h1 { font-size: 30px; color: #1d4ed8; font-weight: 700; line-height: 1.3; margin-bottom: 8px; }
+  .article-body .meta { font-size: 13px; color: #8a8a8a; margin-bottom: 40px; }
+  .article-body p { font-size: 15px; line-height: 1.9; color: #374151; margin-bottom: 16px; }
+  .article-body h2 { font-size: 20px; color: #1a3a6e; font-weight: 700; margin: 40px 0 16px; padding-bottom: 8px; border-bottom: 2px solid #c89a3c; }
+  .article-body h3 { font-size: 17px; color: #1d4ed8; font-weight: 600; margin: 24px 0 12px; }
+  .article-body .bottom-line { background: #f0f4ff; border-left: 4px solid #1d4ed8; padding: 20px 24px; border-radius: 4px; margin: 24px 0; }
+  .article-body .bottom-line.gold { border-left-color: #c89a3c; background: #fffbeb; }
+  .article-body strong { color: #1d4ed8; }
+  .article-body .cn { color: #6b7280; font-size: 14px; line-height: 1.8; }
+  .article-body .metric-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)); gap: 16px; margin: 24px 0; }
+  .article-body .metric-card { background: #f3f4f6; border-radius: 8px; padding: 20px; text-align: center; }
+  .article-body .metric-card .num { font-size: 28px; font-weight: 700; color: #c89a3c; }
+  .article-body .metric-card .label { font-size: 13px; color: #6b7280; margin-top: 4px; }
+  .article-body .cta-box { background: #1a3a6e; color: #f0ece4; border-radius: 8px; padding: 24px; margin: 32px 0; text-align: center; }
+  .article-body .cta-box a { color: #c89a3c; }
+  .article-body ul { padding-left: 20px; margin-bottom: 16px; }
+  .article-body li { font-size: 15px; line-height: 1.8; color: #374151; margin-bottom: 4px; }
+  .article-body img { max-width: 100%; height: auto; border-radius: 8px; margin: 20px 0; border: 1px solid #e5e7eb; }
+  @media (max-width: 768px) { .article-body { margin: 80px auto 40px; } }
+</style>
 </head>
 <body>
 <header>
@@ -44,19 +163,39 @@
   </div>
 </header>
 
-<article style="max-width:800px;margin:100px auto 60px;padding:0 20px">
-  <h1 style="font-size:28px;color:var(--primary);margin-bottom:8px">{{TITLE}}</h1>
-  <p style="color:var(--text-light);font-size:14px;margin-bottom:32px">{{DATE}} · {{AUTHOR}}</p>
+<article class="article-body">
 
-  <div style="line-height:1.8;color:var(--text-light)">
-    {{CONTENT}}
+  <!-- H1 + META -->
+  <h1>{{TITLE}}</h1>
+  <p class="meta">{{DATE}} · {{AUTHOR}} · <span style="color:#c89a3c">{{CATEGORY}}</span></p>
+
+  <!-- IMG optional -->
+  {{FEATURE_IMG}}
+
+  <!-- BOTTOM LINE / TLDR — critical for GEO (AI assistants read this) -->
+  <div class="bottom-line">
+    <strong>Bottom Line:</strong> {{BOTTOM_LINE}}
   </div>
 
-  <hr style="margin:40px 0;border:none;border-top:1px solid var(--border)">
+  <!-- ARTICLE BODY -->
+  {{CONTENT}}
 
-  <div class="blog-link" style="margin-top:20px">
-    <a href="../blog-list-hydrogen-health.html">← Back to Blog</a>
+  <!-- FAQ SECTION — feeds Google rich results + AI assistants -->
+  {{FAQ_SECTION}}
+
+  <!-- CTA -->
+  <div class="cta-box">
+    <strong>Interested in {{PRODUCT_TOPIC}}?</strong><br>
+    <span style="font-size:14px;opacity:0.9">Contact us for OEM/ODM partnerships, bulk orders, or technical inquiries.</span><br>
+    <a href="../contact-mqtech-hydrogen-health.html" style="display:inline-block;margin-top:12px;padding:10px 24px;background:#c89a3c;color:#fff;border-radius:6px;text-decoration:none;font-size:14px">Inquire Now →</a>
   </div>
+
+  <!-- RELATED ARTICLES — internal linking for SEO -->
+  {{RELATED_ARTICLES}}
+
+  <!-- BACK LINK -->
+  <hr style="margin:32px 0;border:none;border-top:1px solid #e5e7eb">
+  <p style="text-align:center"><a href="../blog-list-hydrogen-health.html" style="color:#1d4ed8;text-decoration:none">← Back to Blog</a></p>
 </article>
 
 <footer class="footer">
