@@ -1,0 +1,4 @@
+# GitHub Pages
+*.DS_Store
+node_modules/
+.vscode/
