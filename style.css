@@ -995,7 +995,7 @@ header nav > a.nav-contact:hover {
 }
 
 .about-feature.reverse .about-feature-image { order: 2; }
-.about-feature.reverse { grid-template-columns: minmax(0, .4fr) minmax(0, 1.6fr); }
+.about-feature.reverse { grid-template-columns: minmax(0, 1.6fr) minmax(0, .4fr); }
 
 .about-feature-image {
   min-height: 280px;
@@ -1096,9 +1096,9 @@ header nav > a.nav-contact:hover {
 .about-mission .mission-card p {
   color: rgba(240,236,228,.7);
   margin: 0;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
+  white-space: normal;
+  overflow: visible;
+  text-overflow: clip;
 }
 
 @media (max-width: 768px) {
