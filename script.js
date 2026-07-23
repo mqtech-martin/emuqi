@@ -23,4 +23,28 @@ document.addEventListener('DOMContentLoaded', () => {
       }
     });
   });
+
+  // Application page thumbnail swap
+  document.querySelectorAll('.application-thumbs').forEach(strip => {
+    const heroImg = strip.closest('.application-product-bg')?.querySelector('img');
+    if (!heroImg) return;
+    strip.querySelectorAll('img').forEach(thumb => {
+      thumb.addEventListener('click', () => {
+        heroImg.src = thumb.src;
+        heroImg.alt = thumb.alt;
+        strip.querySelectorAll('img').forEach(t => t.classList.remove('active'));
+        thumb.classList.add('active');
+      });
+    });
+  });
+
+  // Application page scroll-reveal for product panels
+  if ('IntersectionObserver' in window) {
+    const panels = document.querySelectorAll('.application-product-panel');
+    panels.forEach(p => { p.style.opacity = '0'; p.style.transform = 'translateY(24px)'; p.style.transition = 'opacity .6s ease, transform .6s ease'; });
+    const io = new IntersectionObserver(entries => {
+      entries.forEach(e => { if (e.isIntersecting) { e.target.style.opacity = '1'; e.target.style.transform = 'translateY(0)'; } });
+    }, { threshold: 0.15 });
+    panels.forEach(p => io.observe(p));
+  }
 });

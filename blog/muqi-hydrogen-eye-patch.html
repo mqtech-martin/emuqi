@@ -33,7 +33,7 @@ body { font-family: "DM Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", sa
 .hero { background: linear-gradient(135deg,rgba(10,22,40,0.55) 0%,rgba(26,58,110,0.50) 60%,rgba(29,78,216,0.40) 100%),url('../assets/images/hero-bg.png') center/cover no-repeat; padding: 160px 40px 100px; text-align: center; }
 .hero h1 { font-size: 44px; font-weight: 600; color: #f0ece4; letter-spacing: -0.5px; line-height: 1.15; margin-bottom: 16px; }
 .hero .meta { color: rgba(240,236,228,0.5); font-size: 14px; margin-bottom: 24px; }
-.hero .meta span { color: #c89a3c; }
+.hero .meta span { color: #f47b20; }
 .hero .sub { font-size: 17px; color: rgba(240,236,228,0.75); max-width: 560px; margin: 0 auto; line-height: 1.6; font-weight: 300; }
 
 /* ═══ ARTICLE ═══ */
@@ -51,12 +51,12 @@ body { font-family: "DM Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", sa
 .card ul li:last-child { border: none; }
 .card .g { display: grid; grid-template-columns: repeat(4,1fr); gap: 12px; margin: 32px 0; }
 .card .g .c { background: #f8f9fc; border-radius: 10px; padding: 24px 12px; text-align: center; }
-.card .g .c .n { font-size: 28px; font-weight: 700; color: #c89a3c; }
+.card .g .c .n { font-size: 28px; font-weight: 700; color: #f47b20; }
 .card .g .c .l { font-size: 12px; color: #94a3b8; margin-top: 6px; }
 .card .cta { background: #0a1628; border-radius: 12px; padding: 40px; text-align: center; margin: 40px 0; }
-.card .cta h3 { color: #c89a3c; font-size: 18px; margin: 0 0 8px; }
+.card .cta h3 { color: #f47b20; font-size: 18px; margin: 0 0 8px; }
 .card .cta p { color: rgba(240,236,228,0.6); font-size: 14px; margin-bottom: 20px; }
-.card .cta a { display: inline-block; padding: 12px 32px; background: #c89a3c; color: #fff; border-radius: 6px; text-decoration: none; font-weight: 600; font-size: 14px; }
+.card .cta a { display: inline-block; padding: 12px 32px; background: #f47b20; color: #fff; border-radius: 6px; text-decoration: none; font-weight: 600; font-size: 14px; }
 .card .cta a:hover { background: #d4a84b; }
 .faq-item { padding: 20px 0; border-bottom: 1px solid #f0f0f2; }
 .faq-item:last-child { border: none; }
@@ -66,7 +66,7 @@ body { font-family: "DM Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", sa
 /* ═══ FOOTER ═══ */
 .footer { background: #0a1628; margin-top: 80px; }
 .footer-in { max-width: 1200px; margin: 0 auto; padding: 60px 40px 0; display: grid; grid-template-columns: 2fr 1fr 1fr 1fr 1fr; gap: 36px; }
-.footer-in h4 { font-size: 12px; font-weight: 600; color: #c89a3c; letter-spacing: 1.5px; text-transform: uppercase; margin-bottom: 20px; }
+.footer-in h4 { font-size: 12px; font-weight: 600; color: #f47b20; letter-spacing: 1.5px; text-transform: uppercase; margin-bottom: 20px; }
 .footer-in a { display: block; font-size: 14px; color: #94a3b8; text-decoration: none; margin-bottom: 10px; transition: color 0.2s; }
 .footer-in a:hover { color: #f0ece4; }
 .footer-in p { font-size: 14px; color: #94a3b8; line-height: 1.7; }
@@ -90,7 +90,7 @@ body { font-family: "DM Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", sa
   <div style="display:flex;align-items:center;justify-content:space-between;max-width:1200px;margin:0 auto;padding:0 40px;height:72px">
     <a href="../" style="display:flex;align-items:center;gap:10px;text-decoration:none">
       <img src="../assets/images/logo.jpg" alt="" height="38" style="border-radius:3px">
-      <span style="font-size:17px;font-weight:700;color:#1a1a2e">MUQI <span style="color:#c89a3c">·</span> TECH</span>
+      <span style="font-size:17px;font-weight:700;color:#1a1a2e">MUQI <span style="color:#f47b20">·</span> TECH</span>
     </a>
     <div style="display:flex;align-items:center;gap:20px">
       <a href="../" style="font-size:14px;font-weight:500;color:#4a4a5a;text-decoration:none">Home</a>
@@ -100,8 +100,8 @@ body { font-family: "DM Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", sa
       <a href="../solutions-hydrogen-agriculture.html" style="font-size:14px;font-weight:500;color:#4a4a5a;text-decoration:none">Solutions</a>
       <a href="../blog-list-hydrogen-health.html" style="font-size:14px;font-weight:500;color:#4a4a5a;text-decoration:none">Blog</a>
       <a href="https://h2healthhub.notion.site/" target="_blank" style="font-size:14px;font-weight:500;color:#4a4a5a;text-decoration:none">H2 Health Hub</a>
-      <a href="../store.html" style="font-size:14px;font-weight:500;color:#4a4a5a;text-decoration:none">Store</a>
-      <a href="../contact-mqtech-hydrogen-health.html" style="font-size:14px;font-weight:500;color:#fff;background:#1d4ed8;padding:8px 20px;border-radius:6px;text-decoration:none">Contact</a>
+      <a href="../store.html" class="nav-store">Store</a>
+      <a href="../contact-mqtech-hydrogen-health.html" class="nav-contact">Contact</a>
     </div>
   </div>
 </header>
@@ -183,7 +183,7 @@ body { font-family: "DM Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", sa
       </div>
     </div>
     <div>
-      <h4 style="font-size:12px;font-weight:600;color:#c89a3c;letter-spacing:1.5px;text-transform:uppercase;margin-bottom:20px">Explore</h4>
+      <h4 style="font-size:12px;font-weight:600;color:#f47b20;letter-spacing:1.5px;text-transform:uppercase;margin-bottom:20px">Explore</h4>
       <a href="../" style="display:block;font-size:14px;color:#94a3b8;text-decoration:none;margin-bottom:10px">Home</a>
       <a href="../about-functional-ceramic-ball-water-media-manufacturer.html" style="display:block;font-size:14px;color:#94a3b8;text-decoration:none;margin-bottom:10px">About</a>
       <a href="../product-functional-ceramic-materials.html" style="display:block;font-size:14px;color:#94a3b8;text-decoration:none;margin-bottom:10px">Products</a>
@@ -194,13 +194,13 @@ body { font-family: "DM Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", sa
       <a href="../store.html" style="display:block;font-size:14px;color:#94a3b8;text-decoration:none;margin-bottom:10px">Store</a>
     </div>
     <div>
-      <h4 style="font-size:12px;font-weight:600;color:#c89a3c;letter-spacing:1.5px;text-transform:uppercase;margin-bottom:20px">Products</h4>
+      <h4 style="font-size:12px;font-weight:600;color:#f47b20;letter-spacing:1.5px;text-transform:uppercase;margin-bottom:20px">Products</h4>
       <a href="../hydrogen-generate-ceramic-ball.html" style="display:block;font-size:14px;color:#94a3b8;text-decoration:none;margin-bottom:10px">Ceramic Ball</a>
       <a href="../maca-kdf-antibacterial-ceramic-ball.html" style="display:block;font-size:14px;color:#94a3b8;text-decoration:none;margin-bottom:10px">MACA Antibacterial</a>
       <a href="../mph-condensate-neutralizer.html" style="display:block;font-size:14px;color:#94a3b8;text-decoration:none;margin-bottom:10px">MPH+ Condensate</a>
     </div>
     <div>
-      <h4 style="font-size:12px;font-weight:600;color:#c89a3c;letter-spacing:1.5px;text-transform:uppercase;margin-bottom:20px">Applications</h4>
+      <h4 style="font-size:12px;font-weight:600;color:#f47b20;letter-spacing:1.5px;text-transform:uppercase;margin-bottom:20px">Applications</h4>
       <a href="../hydrogen-water-bottle-or-hydrogen-health.html" style="display:block;font-size:14px;color:#94a3b8;text-decoration:none;margin-bottom:10px">Hydrogen Water Bottle</a>
       <a href="../hydrogen-health-hydrogen-alkaline-water-sachet.html" style="display:block;font-size:14px;color:#94a3b8;text-decoration:none;margin-bottom:10px">Alkaline Water Sachet</a>
       <a href="../hydrogen-healthceramic-hydrogen-tablet.html" style="display:block;font-size:14px;color:#94a3b8;text-decoration:none;margin-bottom:10px">Ceramic Hydrogen Tablet</a>
@@ -208,13 +208,13 @@ body { font-family: "DM Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", sa
       <a href="../hydrogen-healthhydrogen-foot-bath-tablet.html" style="display:block;font-size:14px;color:#94a3b8;text-decoration:none;margin-bottom:10px">Foot Bath Tablet</a>
     </div>
     <div>
-      <h4 style="font-size:12px;font-weight:600;color:#c89a3c;letter-spacing:1.5px;text-transform:uppercase;margin-bottom:20px">Contact</h4>
+      <h4 style="font-size:12px;font-weight:600;color:#f47b20;letter-spacing:1.5px;text-transform:uppercase;margin-bottom:20px">Contact</h4>
       <p style="font-size:14px;color:#94a3b8;line-height:1.7">+86 1396 441 6725</p>
       <a href="mailto:muqizb@gmail.com" style="display:block;font-size:14px;color:#94a3b8;text-decoration:none;margin-bottom:10px">muqizb@gmail.com</a>
       <p style="font-size:13px;color:#94a3b8;line-height:1.7;margin-top:12px">Block B, Innovation Park<br>125 Liuquan Road<br>Zibo, Shandong, China</p>
     </div>
   </div>
-  <div style="border-top:1px solid rgba(255,255,255,0.06);text-align:center;padding:24px;font-size:13px;color:#475569;margin-top:48px">&copy; 2025 Muqi Tech &middot; <a href="https://emuqi.com" style="color:#c89a3c;text-decoration:none">emuqi.com</a></div>
+  <div style="border-top:1px solid rgba(255,255,255,0.06);text-align:center;padding:24px;font-size:13px;color:#475569;margin-top:48px">&copy; 2025 Muqi Tech &middot; <a href="https://emuqi.com" style="color:#f47b20;text-decoration:none">emuqi.com</a></div>
 </footer>
 </body>
 </html>
