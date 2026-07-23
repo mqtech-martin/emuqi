@@ -986,29 +986,20 @@ header nav > a.nav-contact:hover {
 }
 
 .about-feature {
-  display: grid;
-  grid-template-columns: minmax(0, 1.6fr) minmax(0, .4fr);
-  gap: 32px;
   max-width: 1100px;
   margin: 48px auto 0;
-  align-items: center;
 }
 
-.about-feature.reverse .about-feature-image { order: 2; }
-.about-feature.reverse { grid-template-columns: minmax(0, 1.6fr) minmax(0, .4fr); }
+.about-feature.reverse .about-feature-image { order: 0; }
 
 .about-feature-image {
-  min-height: 280px;
-  background: #e9eaec;
-  overflow: hidden;
-  border-radius: 4px;
-  border-left: 5px solid var(--orange);
+  width: 100%;
+  margin-bottom: 16px;
 }
 
 .about-feature-image img {
   width: 100%;
   height: auto;
-  min-height: 360px;
   object-fit: contain;
 }
 
