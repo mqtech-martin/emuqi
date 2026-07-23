@@ -1123,7 +1123,7 @@ header nav > a.nav-contact:hover {
   align-items: end;
 }
 
-.application-intro .about-section-kicker { color: #ffad5a; }
+.application-intro .about-section-kicker { color: #f47b20; }
 
 .application-intro h2 {
   max-width: 650px;
@@ -1232,7 +1232,7 @@ header nav > a.nav-contact:hover {
 }
 
 .application-number {
-  color: #ffad5a;
+  color: #f47b20;
   font-family: var(--font-heading);
   font-size: 13px;
   font-weight: 600;
