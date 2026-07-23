@@ -1,12 +1,114 @@
-# MUQI / emuqi.com Design System
+# MUQI / emuqi.com — Project Guide & Design System
 
-Version: 2.0  
-Status: Working source of truth for future website implementation and review  
+Version: 3.0  
+Status: Single source of truth for project context, design rules, and implementation practices  
 Audience: Future AI coding models, frontend implementers, and reviewers  
 Reference artifact: `blog/` article pages are the visual benchmark  
-Changelog: V2.0 — orange VI, navigation geometry fix, About redesign, Application portfolio, Water Bottle images, Solutions three-pillar structure
+Changelog: V3.0 — merged PROJECT.md + README.md into this file; added project context, tech stack, deployment, SEO/GEO strategy; updated header to metallic gradient; Hero overlay reduced; Store/Contact border-radius restored  
+Previous: V2.0 — orange VI, navigation geometry fix, About redesign, Application portfolio, Water Bottle images, Solutions three-pillar structure
 
-## 1. Objective
+---
+
+## 0. Project Context
+
+### 0.1 Company
+
+**山东木齐健康科技有限公司 (MUQI Technology / MQ Health Tech)** — solid-state hydrogen materials company.
+
+- CEO: 陈滨 (Martin Chen), Tsinghua MBA, 20yr international trade
+- Founded 2011, national-level "专精特新小巨人" enterprise
+- Core tech: ICR solid-state hydrogen sustained-release (vs SPE/PEM electrolysis — zero power, 18-24h half-life)
+- Product matrix: 吃·喝·洗·护·泡 (eat-drink-wash-care-bath)
+- 13 invention patents, 29 enterprise standards, 50+ test reports
+- Operations: Jinan, Zibo, Hangzhou (China)
+- Group companies: Muqi New Materials, Muyi Health, Bomiao Environmental, Muxi Technology, Muqi Longxin (factory)
+
+### 0.2 Brand positioning
+
+Hydrogen health · AI+manufacturing · Cross-border trade. "MUQI Inside" — brand-agnostic material & solution supplier.
+
+### 0.3 Domain & deployment
+
+| Role | Current | Notes |
+|------|---------|-------|
+| Primary domain | `emuqi.com` | DNS pointing to Hostinger (147.79.79.250) |
+| GitHub repo | `mqtech-martin/emuqi` (SSH) | Source of truth for all code |
+| Hostinger | `peru-eagle-941015.hostingersite.com` | Git auto-deploy from GitHub; pending emuqi.com binding |
+| GitHub Pages | `mqtech-martin.github.io/emuqi/` | Backup/mirror, also auto-deploys on push |
+| Blog/content | **Undecided** — Ghost Pro is one option under consideration; may use alternative platform | Not committed |
+
+### 0.4 Tech stack
+
+| Component | Technology | Purpose |
+|-----------|-----------|---------|
+| Main site | Static HTML/CSS/JS | Brand showcase, products, applications |
+| Styles | `style.css` (shared) + inline `<style>` (blog) | DM Sans + Inter, orange VI |
+| Hosting A | Hostinger (PHP/HTML) | Primary — Git auto-deploy |
+| Hosting B | GitHub Pages | Mirror/backup |
+| Deploy trigger | `git push origin main` | Both Hostinger and GitHub Pages auto-sync |
+| Content platform | TBD (Ghost / other) | Blog, newsletter — not yet committed |
+
+### 0.5 Directory structure
+
+```
+emuqi/
+├── DESIGN.md              ← THIS FILE — single source of truth
+├── index.html             # Homepage
+├── about-*.html           # About page
+├── product-*.html         # Products overview
+├── hydrogen-health-application.html  # Applications portfolio
+├── solutions-*.html       # Solutions (3 pillars)
+├── contact-*.html         # Contact page
+├── store.html             # Store placeholder
+├── hub.html               # H2 Health Hub
+├── blog-list-*.html       # Blog listing
+├── hydrogen-*.html (×8)   # Product detail pages
+├── blog/*.html (×16)      # Blog article pages
+├── style.css              # Shared stylesheet
+├── script.js              # Gallery + nav interactions
+└── assets/
+    └── images/            # ALL images (logos, products, blog, overview)
+        ├── application-overview/  # Original Application page images
+        ├── water-bottle/          # Water Bottle 11 original images
+        └── ... (113+ images total)
+```
+
+**Rule**: All website assets (HTML, CSS, JS, images, fonts) must live inside this `emuqi/` directory. No external dependencies except Google Fonts CDN. This ensures the entire site is portable and self-contained.
+
+### 0.6 Progress
+
+**Completed:**
+- [x] Full site rebuild from original Zyrosite (18 main pages + 16 blog articles)
+- [x] All images downloaded and organized under `assets/images/`
+- [x] DM Sans + Inter typography unified across all pages
+- [x] Orange VI (#f47b20) replacing old gold (#c89a3c) — 35+ files
+- [x] Navigation geometry fixed (73px header, 34px nav, no jitter between pages)
+- [x] Metallic header gradient with inset highlight
+- [x] Hero overlay reduced for brighter background visibility
+- [x] Store nav with orange accent border + border-radius
+- [x] Contact nav with deep navy + border-radius + 16px separation
+- [x] Dropdown menus with deep navy gradient
+- [x] About page redesign (editorial composition, stat band, alternating features)
+- [x] Application page redesign (hero bands, gallery thumbnails, CTA summary)
+- [x] Water Bottle detail page (11 original images, gallery, specs, feature cards)
+- [x] 4 other product detail pages redesigned with gallery layout
+- [x] Blog listing page (16 articles, 3-column grid)
+- [x] Blog og:image fixes (5 files)
+- [x] Footer unified (5-column, orange headings, social icons)
+- [x] DESIGN.md V3.0 (this file — merged PROJECT.md + README.md)
+- [x] Hostinger Git auto-deploy configured
+- [x] GitHub → Hostinger auto-sync verified
+
+**Pending:**
+- [ ] Bind `emuqi.com` to Hostinger PHP/HTML site (currently shows old Zyrosite)
+- [ ] SSL certificate for `emuqi.com` on Hostinger
+- [ ] SEO/GEO optimization (meta tags, JSON-LD, OG, Twitter Cards) — all pages
+- [ ] Solutions page content (3 pillars: hydrogen consumer, silver economy, hydrogen agriculture)
+- [ ] Content platform decision (Ghost vs alternative)
+- [ ] Social media integration strategy
+- [ ] 4 remaining blog thumbnail images need original replacements
+
+---
 
 Build a restrained, credible B2B technology website for MUQI Technology, a solid-state hydrogen and functional ceramic materials manufacturer.
 
@@ -104,25 +206,41 @@ Type scale:
 
 Never change navigation weight on hover. A hover state may change background and color, but the occupied width and font weight must remain stable to prevent jitter. Strong emphasis comes from deep navy fill, contrast, and a subtle shadow, not heavier text.
 
-### 3.4 Hero
+### 3.4 Hero (V3.0 — Brighter Overlay)
 
 The confirmed hero treatment is:
 
 ```css
 background:
   linear-gradient(135deg,
-    rgba(10,22,40,.55) 0%,
-    rgba(26,58,110,.50) 60%,
-    rgba(29,78,216,.40) 100%),
+    rgba(10,22,40,.25) 0%,
+    rgba(26,58,110,.20) 60%,
+    rgba(29,78,216,.15) 100%),
   url("assets/images/hero-bg.png") center / cover no-repeat;
 padding: 160px 40px 100px;
 ```
 
-Hero text is light: `#f0ece4` for headings and `rgba(240,236,228,.75)` for supporting copy. Do not revert to the old light-blue hero.
+Hero text is white (`#fff`) with text shadows for readability on the brighter background:
+- H1: `text-shadow: 0 2px 12px rgba(0,0,0,.5), 0 0 40px rgba(10,22,40,.3)`
+- Subtitle: `text-shadow: 0 1px 8px rgba(0,0,0,.4)`
 
-### 3.5 Navigation (V2.0 — Geometry Fix)
+Do not revert to the old heavy overlay (55%/50%/40%) — it darkens the background image too much.
 
-**This is the most critical section for preventing page-transition jitter.**
+### 3.5 Navigation (V3.0 — Metallic Header + Geometry Fix)
+
+**Header background**: metallic gray gradient, NOT plain white.
+
+```css
+background: linear-gradient(180deg, #e8eaed 0%, #d8dadf 40%, #cfd2d7 70%, #c5c8cd 100%);
+border-bottom: 1px solid #b8bbc0;
+box-shadow: 0 1px 3px rgba(0,0,0,0.06), inset 0 1px 0 rgba(255,255,255,0.65);
+```
+
+The `inset 0 1px 0 rgba(255,255,255,0.65)` creates a subtle top highlight that gives a brushed-metal feel.
+
+**Store button**: `border-radius: 8px`, semi-transparent white background, orange bottom accent (`inset 0 -2px 0 rgba(244,123,32,.65)`), deep navy text. Hover: deep navy background.
+
+**Contact button**: `border-radius: 8px`, deep navy (`#0a1628`) background, white text, `margin-left: 16px` from Store. Hover: `#1a3a6e`.
 
 All pages — root, blog list, and blog articles — must use identical navigation geometry. The blog list page must load `style.css` in addition to any inline styles.
 
