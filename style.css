@@ -987,14 +987,15 @@ header nav > a.nav-contact:hover {
 
 .about-feature {
   display: grid;
-  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
-  gap: 48px;
+  grid-template-columns: minmax(0, 1.6fr) minmax(0, .4fr);
+  gap: 32px;
   max-width: 1100px;
-  margin: 72px auto 0;
+  margin: 48px auto 0;
   align-items: center;
 }
 
 .about-feature.reverse .about-feature-image { order: 2; }
+.about-feature.reverse { grid-template-columns: minmax(0, .4fr) minmax(0, 1.6fr); }
 
 .about-feature-image {
   min-height: 280px;
@@ -1006,19 +1007,18 @@ header nav > a.nav-contact:hover {
 
 .about-feature-image img {
   width: 100%;
-  height: 100%;
-  min-height: 280px;
   height: auto;
+  min-height: 360px;
   object-fit: contain;
 }
 
 .about-feature h2 {
   color: var(--primary-dark);
   font-family: var(--font-heading);
-  font-size: 30px;
+  font-size: 24px;
   font-weight: 600;
   line-height: 1.2;
-  margin-bottom: 18px;
+  margin-bottom: 12px;
 }
 
 .about-feature p {
@@ -1152,9 +1152,8 @@ header nav > a.nav-contact:hover {
 
 /* Each product is a full-width hero band */
 .application-product {
-  position: relative;
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1.4fr 1fr;
   min-height: 520px;
   overflow: hidden;
   background: #0f172a;
