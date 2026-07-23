@@ -16,8 +16,13 @@
       <span style="font-size:17px;font-weight:700;color:#1a1a2e">MUQI <span style="color:#f47b20">·</span> TECH</span>
     </a>
     <nav style="display:flex;align-items:center;gap:4px">
-      <a href="index.html" style="font-size:14px;font-weight:500;color:#4a4a5a;text-decoration:none;padding:8px 14px;border-radius:8px;transition:all 0.15s;background:transparent" onmouseover="this.style.background='#0a1628';this.style.color='#fff'" onmouseout="this.style.background='transparent';this.style.color='#4a4a5a'">Home</a>
-      <a href="about-functional-ceramic-ball-water-media-manufacturer.html" style="font-size:14px;font-weight:500;color:#4a4a5a;text-decoration:none;padding:8px 14px;border-radius:8px;transition:all 0.15s;background:transparent" onmouseover="this.style.background='#0a1628';this.style.color='#fff'" onmouseout="this.style.background='transparent';this.style.color='#4a4a5a'">About</a>
+      <div style="position:relative" onmouseover="this.querySelector('.dd').style.display='block'" onmouseout="this.querySelector('.dd').style.display='none'">
+        <a href="index.html" style="font-size:14px;font-weight:500;color:#4a4a5a;text-decoration:none;padding:8px 14px;border-radius:8px;transition:all 0.15s;display:flex;align-items:center;gap:4px;background:transparent" onmouseover="this.style.background='#0a1628';this.style.color='#fff'" onmouseout="this.style.background='transparent';this.style.color='#4a4a5a'">Home <svg width="10" height="6" viewBox="0 0 10 6" fill="none" style="opacity:0.7"><path d="M1 1L5 5L9 1" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+        <div class="dd" style="display:none;position:absolute;top:calc(100% + 8px);left:50%;transform:translateX(-50%);background:linear-gradient(160deg,#0f1d36 0%,#1a3a6e 50%,#1d4ed8 100%);border-radius:14px;box-shadow:0 12px 40px rgba(10,22,40,.35),0 0 0 1px rgba(255,255,255,.08) inset;min-width:180px;padding:8px;z-index:200;overflow:hidden">
+          <a href="index.html" style="display:block;padding:12px 16px;font-size:14px;color:#e2e8f0;text-decoration:none;border-radius:10px;transition:all 0.15s" onmouseover="this.style.background='rgba(29,78,216,0.42)';this.style.color='#fff'" onmouseout="this.style.background='transparent';this.style.color='#e2e8f0'">Home</a>
+          <a href="about-functional-ceramic-ball-water-media-manufacturer.html" style="display:block;padding:12px 16px;font-size:14px;color:#e2e8f0;text-decoration:none;border-radius:10px;transition:all 0.15s" onmouseover="this.style.background='rgba(29,78,216,0.42)';this.style.color='#fff'" onmouseout="this.style.background='transparent';this.style.color='#e2e8f0'">About Us</a>
+        </div>
+      </div>
       <div style="position:relative" onmouseover="this.querySelector('.dd').style.display='block'" onmouseout="this.querySelector('.dd').style.display='none'">
         <a href="product-functional-ceramic-materials.html" style="font-size:14px;font-weight:500;color:#4a4a5a;text-decoration:none;padding:8px 14px;border-radius:8px;transition:all 0.15s;display:flex;align-items:center;gap:4px;background:transparent" onmouseover="this.style.background='#0a1628';this.style.color='#fff'" onmouseout="this.style.background='transparent';this.style.color='#4a4a5a'">Products <svg width="10" height="6" viewBox="0 0 10 6" fill="none" style="opacity:0.7"><path d="M1 1L5 5L9 1" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
         <div class="dd" style="display:none;position:absolute;top:calc(100% + 8px);left:50%;transform:translateX(-50%);background:linear-gradient(160deg,#0f1d36 0%,#1a3a6e 50%,#1d4ed8 100%);border-radius:16px;box-shadow:0 16px 48px rgba(10,22,40,0.45),0 0 0 1px rgba(255,255,255,0.08) inset;min-width:260px;padding:10px;z-index:200;overflow:hidden">
@@ -112,24 +117,6 @@
     </div>
   </section>
   <section class="section">
-    <div class="about-intro">
-      <div>
-        <div class="about-kicker">Material science · Application supply chain</div>
-        <h2>Building the solid-state hydrogen application ecosystem.</h2>
-        <div class="about-copy">
-          <p><strong>Muqi Technology</strong> is a hydrogen energy technology company focused on the research, development, and application of new solid-state hydrogen storage and generation materials. We are committed to advancing innovative uses of solid-state hydrogen in health, medical care, and agriculture.</p>
-          <p>Through our “Hydrogen+” strategy, we empower traditional industries including daily chemical products, non-woven materials, Chinese herbal medicine, and water purification. Muqi is a leading company in consumer-facing solid-state hydrogen applications.</p>
-        </div>
-      </div>
-      <div class="about-intro-note">From new materials to finished products, Muqi connects scientific research, manufacturing, intellectual property, and application development in one solid-state hydrogen platform.</div>
-    </div>
-
-    <div class="about-stat-band">
-      <div class="stat-card"><div class="num">25</div><div class="label">Authorized patents</div></div>
-      <div class="stat-card"><div class="num">15</div><div class="label">Invention patents</div></div>
-      <div class="stat-card"><div class="num">12</div><div class="label">R&amp;D team members</div></div>
-    </div>
-
     <div class="about-feature reverse">
       <div class="about-feature-image"><img src="assets/images/laboratory.png" alt="MUQI solid-state hydrogen materials laboratory" loading="lazy"></div>
       <div>
