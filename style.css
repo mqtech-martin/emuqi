@@ -1001,6 +1001,8 @@ header nav > a.nav-contact:hover {
   width: 100%;
   height: auto;
   object-fit: contain;
+  border-radius: 16px;
+  box-shadow: 0 8px 32px rgba(0,0,0,.12);
 }
 
 .about-feature h2 {
