@@ -1069,7 +1069,7 @@ header nav > a.nav-contact:hover {
   color: #f0ece4;
 }
 
-.about-mission .about-section-kicker { color: #ffad5a; }
+.about-mission .about-section-kicker { color: #f47b20; }
 .about-mission h2 { color: #f0ece4; font-size: 30px; margin-bottom: 12px; }
 .about-mission > p { color: rgba(240,236,228,.72); max-width: 620px; line-height: 1.75; }
 
@@ -1092,7 +1092,7 @@ header nav > a.nav-contact:hover {
   text-align: left;
 }
 
-.about-mission .mission-card h3 { color: #ffad5a; }
+.about-mission .mission-card h3 { color: #f47b20; }
 .about-mission .mission-card p {
   color: rgba(240,236,228,.7);
   margin: 0;
